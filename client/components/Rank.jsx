@@ -1,5 +1,6 @@
 import React from 'react'
 import ranksData from '../../data/ranks'
+import { Link } from 'react-router-dom'
 
 const Rank = (props) => {
   const selectedRank = props.match.params.rank
@@ -12,7 +13,7 @@ const Rank = (props) => {
       <ul>
         {ranksData[selectedRank].map((obj) => {
           return (
-            <li key={obj.name}>{obj.name}</li>
+            <li key={obj.name}><Link to={`/rank/${selectedRank}/${obj.name}`}>{obj.name}</Link></li>
           )
         })}
       </ul>
