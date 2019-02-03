@@ -5,8 +5,10 @@
   "repository": "https://github.com/dev-academy-challenges/taxonomic-routing.git",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server & webpack --watch",
-    "test": "jest --watch --noStackTrace"
+    "start": "webpack && node server",
+    "server": "node server",
+    "dev": "webpack --watch",
+    "test": "jest --watchAll"
   },
   "babel": {
     "presets": [
@@ -35,14 +37,16 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "jest": "^23.6.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "react-router": "^4.3.1"
   }
 }

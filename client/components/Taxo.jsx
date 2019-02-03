@@ -14,6 +14,7 @@ const Taxo = (props) => {
       <p>
         {selectedObj.description}
       </p>
+      
     </div>
   )
 }
