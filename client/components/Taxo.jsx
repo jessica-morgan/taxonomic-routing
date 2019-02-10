@@ -1,5 +1,6 @@
 import React from 'react'
 import ranksData from '../../data/ranks'
+import SpeciesListing from './SpeciesListing'
 import { Link } from 'react-router-dom'
 
 const Taxo = (props) => {
@@ -14,7 +15,8 @@ const Taxo = (props) => {
       <p>
         {selectedObj.description}
       </p>
-      
+      <br/>
+      <Link to={`/rank/${selectedRank}/${name}/species`}>Show Species</Link>
     </div>
   )
 }
