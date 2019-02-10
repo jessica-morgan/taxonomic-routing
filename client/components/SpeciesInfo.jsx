@@ -20,17 +20,17 @@ const SpeciesInfo = (props) => {
             </div>
             <div>
             <ul>
-            Kingdom: <Link to=''>{selectedSpecies[0].kingdom}</Link>
+            Kingdom: <Link to={`/rank/kingdoms/${selectedSpecies[0].kingdom}`}>{selectedSpecies[0].kingdom}</Link>
             <br/>
-            Phylum: <Link to=''>{selectedSpecies[0].phylum}</Link>
+            Phylum: <Link to={`/rank/phyla/${selectedSpecies[0].phylum}`}>{selectedSpecies[0].phylum}</Link>
             <br/>
-            Class: <Link to=''>{selectedSpecies[0].class}</Link>
+            Class: <Link to={`/rank/classes/${selectedSpecies[0].class}`}>{selectedSpecies[0].class}</Link>
             <br/>
-            Order: <Link to=''>{selectedSpecies[0].order}</Link>
+            Order: <Link to={`/rank/orders/${selectedSpecies[0].order}`}>{selectedSpecies[0].order}</Link>
             <br/>
-            Family: <Link to=''>{selectedSpecies[0].family}</Link>
+            Family: <Link to={`/rank/families/${selectedSpecies[0].family}`}>{selectedSpecies[0].family}</Link>
             <br/>
-            Genus: <Link to=''>{selectedSpecies[0].genus}</Link>
+            Genus: <Link to={`/rank/genera/${selectedSpecies[0].genus}`}>{selectedSpecies[0].genus}</Link>
             </ul>
             </div>
         </div>
